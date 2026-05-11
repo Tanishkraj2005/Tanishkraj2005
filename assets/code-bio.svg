@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="650" height="340" viewBox="0 0 650 340">
+  <defs>
+    
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1A1B26"/>
+      <stop offset="100%" stop-color="#16161E"/>
+    </linearGradient>
+
+    
+    <linearGradient id="header" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1A1B26"/>
+      <stop offset="100%" stop-color="#1F2335"/>
+    </linearGradient>
+
+    
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+
+    
+    <style>
+      .blink { animation: blinker 1s step-end infinite; }
+      @keyframes blinker { 50% { opacity: 0; } }
+      .code { font-family: 'Fira Code', 'JetBrains Mono', 'Consolas', monospace; font-size: 14px; }
+      .line-num { fill: #444B6A; font-size: 13px; text-anchor: end; user-select: none; }
+      
+      /* Syntax Highlighting Colors (Tokyo Night Theme) */
+      .keyword { fill: #BB9AF7; }    /* const, return */
+      .variable { fill: #7AA2F7; }   /* developer, obj keys */
+      .string { fill: #9ECE6A; }     /* "strings" */
+      .operator { fill: #89DDFF; }   /* =, :, {, } */
+      .comment { fill: #565F89; font-style: italic; }
+      .punctuation { fill: #C0CAF5; }
+    </style>
+  </defs>
+
+  
+  <rect x="10" y="10" width="630" height="320" rx="8" fill="url(#bg)" filter="url(#shadow)"/>
+  <rect x="10" y="10" width="630" height="320" rx="8" fill="url(#bg)" stroke="#292E42" stroke-width="1"/>
+
+  
+  <path d="M 10 18 A 8 8 0 0 1 18 10 L 632 10 A 8 8 0 0 1 640 18 L 640 40 L 10 40 Z" fill="url(#header)"/>
+  <line x1="10" y1="40" x2="640" y2="40" stroke="#16161E" stroke-width="2"/>
+
+  
+  <circle cx="30" cy="25" r="6" fill="#F7768E"/>
+  <circle cx="50" cy="25" r="6" fill="#E0AF68"/>
+  <circle cx="70" cy="25" r="6" fill="#9ECE6A"/>
+
+  
+  <g transform="translate(100, 15)">
+    <rect x="0" y="0" width="160" height="25" rx="4" fill="#1A1B26"/>
+    <text x="15" y="17" class="code" fill="#A9B1D6" font-size="12">tanishk.config.js</text>
+    
+    <rect x="130" y="5" width="14" height="14" rx="2" fill="#F0DB4F"/>
+    <text x="132" y="16" font-family="Arial" font-size="10" font-weight="bold" fill="#323330">JS</text>
+  </g>
+
+  
+  <g transform="translate(10, 60)" class="code">
+    
+    
+    <text x="35" y="20" class="line-num">1</text>
+    <text x="35" y="42" class="line-num">2</text>
+    <text x="35" y="64" class="line-num">3</text>
+    <text x="35" y="86" class="line-num">4</text>
+    <text x="35" y="108" class="line-num">5</text>
+    <text x="35" y="130" class="line-num">6</text>
+    <text x="35" y="152" class="line-num">7</text>
+    <text x="35" y="174" class="line-num">8</text>
+    <text x="35" y="196" class="line-num">9</text>
+    <text x="35" y="218" class="line-num">10</text>
+    <text x="35" y="240" class="line-num">11</text>
+
+    
+    <text x="55" y="20" class="comment">// Configuration profile for Tanishk Raj</text>
+
+    
+    <text x="55" y="42">
+      <tspan class="keyword">const</tspan> <tspan class="variable">developer</tspan> <tspan class="operator">=</tspan> <tspan class="operator">{</tspan>
+    </text>
+
+    
+    <text x="75" y="64">
+      <tspan class="variable">name</tspan><tspan class="operator">:</tspan> <tspan class="string">"Tanishk Raj"</tspan><tspan class="punctuation">,</tspan>
+    </text>
+
+    
+    <text x="75" y="86">
+      <tspan class="variable">roles</tspan><tspan class="operator">:</tspan> <tspan class="punctuation">[</tspan><tspan class="string">"Full-Stack Developer"</tspan><tspan class="punctuation">, </tspan><tspan class="string">"Data Scientist"</tspan><tspan class="punctuation">],</tspan>
+    </text>
+
+    
+    <text x="75" y="108">
+      <tspan class="variable">education</tspan><tspan class="operator">:</tspan> <tspan class="string">"B.Tech CSE @ LPU (CGPA: 7.5)"</tspan><tspan class="punctuation">,</tspan>
+    </text>
+
+    
+    <text x="75" y="130">
+      <tspan class="variable">location</tspan><tspan class="operator">:</tspan> <tspan class="string">"Phagwara, Punjab, India 🇮🇳"</tspan><tspan class="punctuation">,</tspan>
+    </text>
+
+    
+    <text x="75" y="152">
+      <tspan class="variable">techStack</tspan><tspan class="operator">:</tspan> <tspan class="punctuation">[</tspan><tspan class="string">"React"</tspan><tspan class="punctuation">, </tspan><tspan class="string">"Node.js"</tspan><tspan class="punctuation">, </tspan><tspan class="string">"Python"</tspan><tspan class="punctuation">, </tspan><tspan class="string">"MongoDB"</tspan><tspan class="punctuation">],</tspan>
+    </text>
+
+    
+    <text x="75" y="174">
+      <tspan class="variable">achievements</tspan><tspan class="operator">:</tspan> <tspan class="string">"200+ DSA Problems Solved"</tspan><tspan class="punctuation">,</tspan>
+    </text>
+
+    
+    <text x="75" y="196">
+      <tspan class="variable">lookingFor</tspan><tspan class="operator">:</tspan> <tspan class="string">"Internships &amp; Meaningful Collaborations"</tspan><tspan class="punctuation">,</tspan>
+    </text>
+    
+    
+    <text x="75" y="218">
+      <tspan class="variable">contact</tspan><tspan class="operator">:</tspan> <tspan class="string">"rajtanishk475@gmail.com"</tspan>
+    </text>
+
+    
+    <text x="55" y="240">
+      <tspan class="operator">};</tspan>
+    </text>
+
+    
+    <rect x="75" y="228" width="8" height="15" fill="#C0CAF5" class="blink"/>
+
+  </g>
+</svg>
+
